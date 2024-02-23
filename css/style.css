@@ -46,6 +46,8 @@ h3{
 p{
     font-weight: 200;
     color: #a3a3a3;
+    margin: 20px 0px;
+
 }
 
 
@@ -91,6 +93,7 @@ main{
     color: #ffffff;
     width: calc(100% - 200px);
     overflow-y: scroll;
+    padding: 20px;
 }
 
 main ul li{
@@ -99,30 +102,59 @@ main ul li{
     text-transform: uppercase;
 }
 main h2{
-    margin: 20px 0px 20px 10px;
+    margin: 20px 0px 20px 0px;
 }
 
-main div.row:last-child .card-img{
+.circle{
     width: 250px;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
+    position: relative;
 /* ˆˆˆˆˆˆˆˆˆˆˆˆˆ make circle imgˆˆˆˆˆˆˆ */
     
 }
-
-.card-text{
-    width: 250px;
+.card{
+    margin: 20px 0px;
 }
+ 
 
 .card-img{
-    margin: 0 10px;
     width: 250px;
+    position: relative;
+    
 }
 
 .card-text{
     margin: 20px 10px;
     text-align: center;
+    position: static;
+   width: 250px;
+}
+
+.img-hover{
+    width: 250px;
+    aspect-ratio: 1 / 1;
+    color: #ffffff;
+    font-size: 5em;
+    text-align: center;
+    line-height: 250px;
+    
+    
+}
+
+.img-box{
+    position: absolute;
+}
+
+.img-box:hover{
+    opacity: 0.3;
+}
+
+.img-hover:hover {
+    display: block;
+
+
 }
 /* ************toolbar*************** */
 
