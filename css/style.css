@@ -1,25 +1,26 @@
 /* *****************General*********** */
 
 :root {
-	--color-greenbar hover: #adff2f;
-	--color-logo: #ffffff;
-	--color-text nav: #a3a3a3;
-	--color-main: #141922;
-	--color-header: #080b12;
-	--color-toolbar: #282828;
-	--color-font toolbar: #878787;
+    --color-greenbar hover: #adff2f;
+    --color-logo: #ffffff;
+    --color-text nav: #a3a3a3;
+    --color-main: #141922;
+    --color-header: #080b12;
+    --color-toolbar: #282828;
+    --color-font toolbar: #878787;
 }
 
-.wrapper{
+.wrapper {
     height: 100vh;
     /* overflow: hidden; */
 
 }
 
-body{
+body {
     font-family: "Montserrat", sans-serif;
 }
-.content{
+
+.content {
     height: calc(100vh - 90px);
     width: 100%;
 }
@@ -32,18 +33,20 @@ a {
     text-decoration: none;
 }
 
-img{
+img {
     display: block;
     width: 100%;
 }
 
-h2{
+h2 {
     font-size: 2em;
 }
-h3{
+
+h3 {
     margin: 15px auto;
 }
-p{
+
+p {
     font-weight: 200;
     color: #a3a3a3;
     margin: 20px 0px;
@@ -54,30 +57,50 @@ p{
 
 
 /* ************** sidebar *********** */
-#sidebar{
+#sidebar {
     background-color: #000000;
     color: #a3a3a3;
     width: 200px;
 
 }
 
-.list-main a{
+.list-main a {
     color: #a3a3a3;
 
 }
+
+#sidebar {
+    padding: 10px;
+    line-height: 2.5;
+}
+
+#logo {
+    margin: 20px auto;
+}
+
+.playlist li {
+    font-size: 12px;
+
+}
+
+.playlist i {
+    font-size: 2.5em;
+    color: #a3a3a3;
+}
+
 /* *************** header *********** */
 
-.header{
-    background-color: #080b12 ;
+.header {
+    background-color: #080b12;
     color: #ffffff;
-    height: 80px;
+    height: 100px;
     position: fixed;
     top: 0;
     left: 200px;
     width: calc(100% - 200px);
 }
 
-.header>div a{
+.header>div a {
     text-transform: uppercase;
     border: 1px solid #a3a3a3;
     border-radius: 20px;
@@ -86,68 +109,73 @@ p{
     margin-right: 10px;
 
 }
+
 /* **************** main *********** */
 
-main{
-    background-color: #141922 ;
+main {
+    background-color: #141922;
     color: #ffffff;
     width: calc(100% - 200px);
     overflow-y: scroll;
     padding: 20px;
 }
 
-main ul li{
+main ul li {
     margin: 100px 15px;
     text-emphasis: none;
     text-transform: uppercase;
 }
-main h2{
+
+main h2 {
     margin: 20px 0px 20px 0px;
 }
 
-.circle{
-    width: 250px;
+.circle {
+    width: 100%;
     aspect-ratio: 1 / 1;
     border-radius: 50%;
     overflow: hidden;
     position: relative;
-/* ˆˆˆˆˆˆˆˆˆˆˆˆˆ make circle imgˆˆˆˆˆˆˆ */
-    
+    /* ˆˆˆˆˆˆˆˆˆˆˆˆˆ make circle imgˆˆˆˆˆˆˆ */
+
 }
-.card{
+.row{
+    gap: 20px;
+}
+.card {
+
     margin: 20px 0px;
 }
- 
 
-.card-img{
-    width: 250px;
+
+.card-img {
     position: relative;
-    
+
 }
 
-.card-text{
+.card-text {
     margin: 20px 10px;
     text-align: center;
     position: static;
-   width: 250px;
+    width: ;
 }
 
-.img-hover{
+.img-hover {
     width: 250px;
     aspect-ratio: 1 / 1;
     color: #ffffff;
     font-size: 5em;
     text-align: center;
     line-height: 250px;
-    
-    
+
+
 }
 
-.img-box{
+.img-box {
     position: absolute;
 }
 
-.img-box:hover{
+.img-box:hover {
     opacity: 0.3;
 }
 
@@ -156,10 +184,11 @@ main h2{
 
 
 }
+
 /* ************toolbar*************** */
 
-#toolbar{
-    background-color:#282828 ;
+#toolbar {
+    background-color: #282828;
     color: a3a3a3;
     height: 90px;
 }
