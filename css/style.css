@@ -1,0 +1,87 @@
+/* *****************General*********** */
+
+:root {
+	--color-greenbar hover: #adff2f;
+	--color-logo: #ffffff;
+	--color-text nav: #a3a3a3;
+	--color-main: #141922;
+	--color-header: #080b12;
+	--color-toolbar: #282828;
+	--color-font toolbar: #878787;
+}
+
+.wrapper{
+    height: 100vh;
+    /* overflow: hidden; */
+
+}
+
+body{
+    font-family: "Montserrat", sans-serif;
+}
+.content{
+    height: calc(100vh - 90px);
+    width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+/* ************** sidebar *********** */
+#sidebar{
+    background-color: #000000;
+    color: #a3a3a3;
+    width: 200px;
+
+}
+
+.list-main a{
+    color: #a3a3a3;
+
+}
+/* *************** header *********** */
+
+.header{
+    background-color: #080b12 ;
+    color: #ffffff;
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 200px;
+    width: calc(100% - 200px);
+}
+
+.header>div a{
+    text-transform: uppercase;
+    border: 1px solid #a3a3a3;
+    border-radius: 20px;
+    color: #ffffff;
+    padding: 10px 30px;
+    margin-right: 10px;
+
+}
+/* **************** main *********** */
+
+main{
+    background-color: #141922 ;
+    color: #ffffff;
+    width: calc(100% - 200px);
+}
+
+main ul li{
+    margin: 100px 15px;
+    text-emphasis: none;
+    text-transform: uppercase;
+}
+
+/* ************toolbar*************** */
+
+#toolbar{
+    background-color:#282828 ;
+    color: a3a3a3;
+    height: 90px;
+}
