@@ -14,6 +14,10 @@ html{
 .debug {
     border: 1px solid red;
 }
+
+.margin-0-a{
+    margin: 0 auto;
+}
 /* flex */
 
 .d-flex {
@@ -44,3 +48,4 @@ html{
     align-items: flex-start;
     align-content: flex-start;
 }
+
