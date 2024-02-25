@@ -49,3 +49,8 @@ html{
     align-content: flex-start;
 }
 
+.align-end{
+    align-items: flex-end;
+    align-content: flex-end;
+}
+

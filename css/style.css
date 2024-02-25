@@ -61,7 +61,8 @@ p {
     background-color: #000000;
     color: #a3a3a3;
     width: 200px;
-
+    padding: 10px;
+    line-height: 2;
 }
 
 .list-main a {
@@ -69,31 +70,38 @@ p {
 
 }
 
-#sidebar {
-    padding: 10px;
-    line-height: 2;
-    
-}
-
 #logo {
     margin: 20px auto;
 }
 
-.nav-side{
+#logo #small {
+    width: 30%;
+    display: none;
+}
+
+/* * nella versione mobile text-nav in display none  */
+.nav-side {
     display: flex;
     flex-direction: column;
     margin: 20px 0;
     line-height: 1.5;
 }
 
+.logo-nav {
+    width: 15%;
+}
+
+.text-nav {}
+
+/* ************************************************* */
 .playlist li {
     font-size: 12px;
 
 }
 
-.side-start{
-    height: 90%;
-    line-height: 2.5;
+/* ********** parte inferiore sidebar ************** */
+.side-start {
+    height: 60%;
 }
 
 .playlist i {
@@ -101,23 +109,27 @@ p {
     color: #a3a3a3;
 }
 
-.side-end a{
-    margin: auto 10px;
+.side-end a {
+    margin-right: 10px;
     color: #a3a3a3;
-   
+
 }
 
-.side-end{
+.side-end {
+    height: 39%;
     display: flex;
-   flex-direction: column;
+    flex-direction: column;
+    justify-content: flex-end;
 }
-.user{
+
+
+.user {
     display: flex;
     align-items: center;
 }
 
-.user h3{
-    margin: auto 10px ;
+.user h3 {
+    margin: auto 10px;
 }
 
 /* *************** header *********** */
@@ -171,9 +183,11 @@ main h2 {
     /* ˆˆˆˆˆˆˆˆˆˆˆˆˆ make circle imgˆˆˆˆˆˆˆ */
 
 }
-.row{
+
+.row {
     gap: 20px;
 }
+
 .card {
     width: calc(100% / 6 - 20px);
 
@@ -227,14 +241,14 @@ main h2 {
 
 }
 
-.toolbar{
+.toolbar {
     width: calc(100% / 3);
 }
 
 
 /* ************* left toolbar **************/
-.left.toolbar{
- 
+.left.toolbar {
+
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -242,49 +256,49 @@ main h2 {
 
 }
 
-.left div:first-child{
+.left-img{
     height: 100%;
     aspect-ratio: 1 / 1;
     padding: 15px;
 }
 
-div.left {
-    height: 100%;
-}
 
-.left.toolbar p{
+.left.toolbar p {
     margin: 0 auto;
     font-size: 0.8em;
 }
 
-.disp{
-    padding: 10px;
+.disp {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 30px;
+   
 }
 
-.heart{
-    margin-left: 40px;
+.heart,
+.folder {
+    padding: 5px;
 }
 
-    
 /************** center toolbar *************/
 
-.center-btn{
+.center-btn {
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-   
-    
+
+
 
 }
 
-.center-buff{
+.center-buff {
     height: 50%;
     display: flex;
- 
+
 }
 
-.center-btn i{
+.center-btn i {
     margin: 0px 10px;
     font-size: 2em;
 
@@ -319,8 +333,8 @@ input[type="range"]::-webkit-slider-thumb {
 
 }
 
-.current-time{
-    display:flex;
+.current-time {
+    display: flex;
     align-items: center;
     margin: auto;
 }
@@ -328,15 +342,14 @@ input[type="range"]::-webkit-slider-thumb {
 
 /************* right toolbar **************/
 
-.right.toolbar i {
+.right.toolbar div.d-flex div {
     padding: 10px;
-    
-   
+
+
 
 }
 
-.right.toolbar div div{
-
-    margin-right: 10px;
+.right.toolbar div.d-flex div:last-child {
+    display: flex;
+    align-items: center;
 }
-
