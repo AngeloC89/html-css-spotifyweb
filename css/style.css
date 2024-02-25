@@ -70,6 +70,12 @@ p {
     color: #a3a3a3;
     font-size: 1.5em;
 }
+
+.playlist li a:hover{
+    color: #ffffff;
+}
+
+
 .list-main a {
     color: #a3a3a3;
 
@@ -114,7 +120,7 @@ h4{
 
 /* ********** parte inferiore sidebar****** */
 .side-start {
-    height: 60%;
+    height: 59%;
 }
 
 .playlist i {
@@ -157,15 +163,25 @@ h4{
     width: calc(100% - 200px);
 }
 
-.header>div a {
+.header>div a{
     text-transform: uppercase;
-    border: 1px solid #a3a3a3;
+    border: 1px solid #ffffff;
     border-radius: 20px;
     color: #ffffff;
     padding: 10px 30px;
-    margin-right: 10px;
+   
 
 }
+.header>div {
+    transition: transform .2s;
+    margin-right: 30px;
+ }
+
+.header:hover div {
+    transform: scale(1.2);
+    
+}
+
 
 /* **************** main *********** */
 
@@ -187,6 +203,11 @@ main ul li {
    
     text-transform: uppercase;
 }
+
+main ul li a:hover{
+    color: #ffffff;
+}
+
 
 main h2 {
     margin: 20px 0px 20px 0px;
@@ -272,7 +293,7 @@ main h2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    width: 45%;
+    
 
 }
 
@@ -359,6 +380,11 @@ input[type="range"]::-webkit-slider-thumb {
     margin: auto;
 }
 
+
+input[type="range"]:hover{
+    background-color: #09bf27;
+    cursor: pointer;
+}
 
 /************* right toolbar **************/
 

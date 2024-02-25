@@ -23,11 +23,12 @@
     #small {
         display: block;
     }
-    .text-nav{
+
+    .text-nav {
         display: none;
     }
 
-    .playlist ul{
+    .playlist ul {
         display: none;
     }
 
@@ -35,6 +36,36 @@
         display: none;
     }
 
-    
-}
+    #sidebar {
+        width: 50px;
+    }
 
+    #install {
+        display: none;
+    }
+
+    .user h3 {
+        display: none;
+    }
+
+    .side-start div,
+    #logo img{
+        width: 100%;
+    }
+    .logo-nav{
+        width: 100%;
+    }
+    
+
+    main {
+        width: calc(100% - 50px);
+    }
+
+    .header {
+        width: calc(100% - 50px);
+        position: fixed;
+        top: 0;
+        left: 50px;
+        z-index: 3009;
+    }
+}
