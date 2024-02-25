@@ -230,15 +230,19 @@
 
         </div>
         <div id="toolbar" class="d-flex">
-            <div class="left toolbar d-flex align-c-c">
-                <div><img src="./img/sinister.jpeg" alt=""></div>
-                <div>
-                    <h5 class="disp-toolb">Sinister</h5>
-                    <p class="disp-toolb">Brano Nome</p>
-                </div>
-                <div><i class="fa-solid fa-heart"></i></div>
-                <div><i class="fa-solid fa-folder"></i></div>
+            <!-- contenitore 1/3 -->
+            <div class="left toolbar">
+                
+                    <div><img src="./img/sinister.jpeg" alt=""></div>
+                    <div>
+                        <h5>Sinister</h5>
+                        <p>Brano Nome</p>
+                    </div>
+                    <div class="disp heart"><i class="fa-solid fa-heart"></i></div>
+                    <div class="disp"><i class="disp-toolb fa-solid fa-folder"></i></div>
+                
             </div>
+            <!-- contenitore 2/3 -->
             <div class="center toolbar">
                 <div class="center-btn">
                     <div><i class="fa-solid fa-shuffle"></i></div>
@@ -255,7 +259,18 @@
                     <div class="current-time">0:00</div>
                 </div>
             </div>
-            <div class="right toolbar">sdfs</div>
+            <!-- contenitore 3/3 -->
+            <div class="right toolbar d-flex j-c-end align-c-c">
+                <div class="d-flex align-c-c">
+                    <div><i class="fa-solid fa-bars"></i></div>
+                    <div><i class="fa-solid fa-display"></i></div>
+                    <div><i class="fa-solid fa-volume-high"></i></div>
+                    <div>
+                        <input type="range" id="volume">
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 </body>

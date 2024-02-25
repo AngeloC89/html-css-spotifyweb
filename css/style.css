@@ -218,7 +218,7 @@ main h2 {
 
 }
 
-/* ************toolbar*************** */
+/* *************** toolbar *************** */
 
 #toolbar {
     background-color: #282828;
@@ -230,23 +230,43 @@ main h2 {
 .toolbar{
     width: calc(100% / 3);
 }
-div.left.toolbar div{
-    width: 10%;
-    margin: 0 10px;
+
+
+/* ************* left toolbar **************/
+.left.toolbar{
+ 
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 45%;
 
 }
+
+.left div:first-child{
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    padding: 15px;
+}
+
+div.left {
+    height: 100%;
+}
+
+.left.toolbar p{
+    margin: 0 auto;
+    font-size: 0.8em;
+}
+
+.disp{
+    padding: 10px;
+}
+
+.heart{
+    margin-left: 40px;
+}
+
     
-
-
-
-div.right.toolbar{
-    background-color: orange ;
-
-}
-/* center toolbar */
-div.center.toolbar{
-  
-}
+/************** center toolbar *************/
 
 .center-btn{
     height: 50%;
@@ -271,10 +291,10 @@ div.center.toolbar{
 }
 
 .center-btn {
-    margin: auto;
+    padding: auto;
 }
 
-/* customize player */
+/* *********** customize player ************/
 #controls {
     display: flex;
     justify-content: space-between;
@@ -304,3 +324,19 @@ input[type="range"]::-webkit-slider-thumb {
     align-items: center;
     margin: auto;
 }
+
+
+/************* right toolbar **************/
+
+.right.toolbar i {
+    padding: 10px;
+    
+   
+
+}
+
+.right.toolbar div div{
+
+    margin-right: 10px;
+}
+
