@@ -1,2 +1,40 @@
-@media screen and (max-width: 992px){
-   
+/* ************media query ******************* */
+@media screen and (max-width:1200px) {
+    .card {
+        width: calc(100% / 4 - 20px);
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .card {
+        width: calc(100% / 2 - 20px);
+    }
+
+
+}
+
+@media screen and (max-width:576px) {
+
+    #big {
+        display: none;
+    }
+
+    #small {
+        display: block;
+    }
+    .text-nav{
+        display: none;
+    }
+
+    .playlist ul{
+        display: none;
+    }
+
+    .playlist h4 {
+        display: none;
+    }
+
+    
+}
+

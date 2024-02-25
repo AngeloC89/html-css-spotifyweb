@@ -63,18 +63,31 @@ p {
     width: 200px;
     padding: 10px;
     line-height: 2;
+    
 }
 
+.playlist a{
+    color: #a3a3a3;
+    font-size: 1.5em;
+}
 .list-main a {
     color: #a3a3a3;
 
 }
 
-#logo {
-    margin: 20px auto;
+h4{
+    text-transform: uppercase;
 }
 
-#logo #small {
+.nav-side div{
+    margin: 1px 0px;
+}
+#logo {
+    margin: 20px auto;
+    
+}
+
+#small {
     width: 30%;
     display: none;
 }
@@ -99,7 +112,7 @@ p {
 
 }
 
-/* ********** parte inferiore sidebar ************** */
+/* ********** parte inferiore sidebar****** */
 .side-start {
     height: 60%;
 }
@@ -164,9 +177,14 @@ main {
     padding: 20px;
 }
 
+#nav-main{
+    height: 120px;
+}
+
 main ul li {
-    margin: 100px 15px;
-    text-emphasis: none;
+    margin: 0px 10px;
+
+   
     text-transform: uppercase;
 }
 
@@ -175,8 +193,8 @@ main h2 {
 }
 
 .circle {
-    width: 100%;
-    aspect-ratio: 1 / 1;
+  
+   
     border-radius: 50%;
     overflow: hidden;
     position: relative;
@@ -189,48 +207,50 @@ main h2 {
 }
 
 .card {
-    width: calc(100% / 6 - 20px);
-
-    margin: 20px 0px;
-}
-
-
-.card-img {
     position: relative;
-
-}
-
-.card-text {
-    margin: 20px 10px;
-    text-align: center;
-    position: static;
-    width: ;
-}
-
-.img-hover {
-    width: 250px;
-    aspect-ratio: 1 / 1;
-    color: #ffffff;
-    font-size: 5em;
-    text-align: center;
-    line-height: 250px;
-
-
-}
-
-.img-box {
+    overflow: hidden;
+    width: calc(100% / 6 - 20px);/* Aggiungi una larghezza appropriata per la card */
+  }
+  
+ .card-img {
+    position: relative;
+  } 
+  
+  .img-hover {
     position: absolute;
-}
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .card:hover .img-hover {
+    opacity: 1;
+  }
+  
+  .img-hover i {
+    font-size: 6em;
+    color: #fff;
+  }
+  
+  .card-text {
+   
+    background-color: #fff;
+  }
+  
+  .card h3,
+  .card p {
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+  }
 
-.img-box:hover {
-    opacity: 0.3;
-}
-
-.img-hover:hover {
-    display: block;
-
-
-}
 
 /* *************** toolbar *************** */
 
@@ -353,3 +373,9 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     align-items: center;
 }
+
+
+
+
+
+ 
