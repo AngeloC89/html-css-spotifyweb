@@ -63,18 +63,57 @@ p {
     width: 200px;
     padding: 10px;
     line-height: 2;
+    overflow: hidden;
+    
+    
+    
+}
+#sidebar a {
+    opacity: 0.4;
+}
+
+#sidebar a:hover{
+    opacity: 1;
+} 
+
+.side-start {
+    height: calc(100% - 60px)
     
 }
 
+.text-nav a{
+   color: #a3a3a3;
+}
+
+.playlist{
+    min-height: 0px;
+    background-color: black;
+}
+
+.playlist ul{
+  
+    overflow-y: auto ;
+    height: calc(100% - 60px)
+}
+
+.playlist i {
+    font-size: 1.5em;
+    color: #a3a3a3;
+    
+}
+
+
 .playlist a{
     color: #a3a3a3;
-    font-size: 1.5em;
+    font-size: 1.2em;
 }
 
-.playlist li a:hover{
-    color: #ffffff;
-}
 
+
+.playlist li {
+    font-size: 12px;
+
+}
 
 .list-main a {
     color: #a3a3a3;
@@ -87,6 +126,7 @@ h4{
 
 .nav-side div{
     margin: 1px 0px;
+    
 }
 #logo {
     margin: 20px auto;
@@ -104,28 +144,29 @@ h4{
     flex-direction: column;
     margin: 20px 0;
     line-height: 1.5;
+    overflow: hidden;
 }
 
 .logo-nav {
     width: 15%;
 }
 
-.text-nav {}
 
 /* ************************************************* */
-.playlist li {
-    font-size: 12px;
 
-}
 
 /* ********** parte inferiore sidebar****** */
-.side-start {
-    height: 59%;
-}
 
-.playlist i {
-    font-size: 2.5em;
-    color: #a3a3a3;
+
+
+.side-end {
+    width: 100%;
+    height: 60px%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: black;
+    
 }
 
 .side-end a {
@@ -133,14 +174,6 @@ h4{
     color: #a3a3a3;
 
 }
-
-.side-end {
-    height: 39%;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
 
 .user {
     display: flex;
@@ -161,6 +194,7 @@ h4{
     top: 0;
     left: 200px;
     width: calc(100% - 200px);
+    overflow: hidden;
 }
 
 .header>div a{
@@ -173,15 +207,14 @@ h4{
 
 }
 .header>div {
-    transition: transform .2s;
+    transition: transform 0.7s;
     margin-right: 30px;
  }
 
-.header:hover div {
+.header div:hover {
     transform: scale(1.2);
-    
-}
 
+}
 
 /* **************** main *********** */
 
@@ -282,13 +315,8 @@ main h2 {
 
 }
 
-.toolbar {
-    width: calc(100% / 3);
-}
-
-
 /* ************* left toolbar **************/
-.left.toolbar {
+.left-toolbar {
 
     display: flex;
     align-items: center;
@@ -304,7 +332,7 @@ main h2 {
 }
 
 
-.left.toolbar p {
+.left-toolbar p {
     margin: 0 auto;
     font-size: 0.8em;
 }
@@ -322,31 +350,50 @@ main h2 {
 }
 
 /************** center toolbar *************/
+div.center-toolbar {
+    width: calc(100% / 3 * 2);
+    height: 100%;
+}
+
 
 .center-btn {
-    height: 50%;
+    height: 60%;
     display: flex;
     justify-content: center;
     align-items: flex-end;
-
+    
+}
+#tol-center{
+    display: flex;
+    justify-content: space-evenly;
+    width: calc(100% / 3);
 
 
 }
 
+
 .center-buff {
-    height: 50%;
+    height: 40%;
     display: flex;
 
 }
 
-.center-btn i {
-    margin: 0px 10px;
+.center-btn i{
+    margin: 0px 5px;
     font-size: 2em;
+    color: #ffffff;
 
 }
 
 .center-btn {
-    padding: auto;
+  
+}
+.center-btn div{
+    transition: 0.7s;
+}
+
+.center-btn div:hover:nth-child(3){
+    transform: scale(1.2);
 }
 
 /* *********** customize player ************/
@@ -378,6 +425,8 @@ input[type="range"]::-webkit-slider-thumb {
     display: flex;
     align-items: center;
     margin: auto;
+    font-size: 0.9em;
+    font-weight: 700;
 }
 
 
@@ -388,14 +437,14 @@ input[type="range"]:hover{
 
 /************* right toolbar **************/
 
-.right.toolbar div.d-flex div {
-    padding: 10px;
+.right-toolbar div.d-flex div {
+    margin: 10px;
 
 
 
 }
 
-.right.toolbar div.d-flex div:last-child {
+.right-toolbar div.d-flex div:last-child {
     display: flex;
     align-items: center;
 }

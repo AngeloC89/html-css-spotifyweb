@@ -53,4 +53,6 @@ html{
     align-items: flex-end;
     align-content: flex-end;
 }
-
+ .f-column{
+    flex-direction: column;
+ }
