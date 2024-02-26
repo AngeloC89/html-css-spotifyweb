@@ -68,13 +68,22 @@ p {
     
     
 }
-#sidebar a {
-    opacity: 0.4;
+/* #sidebar a, */
+#sidebar .nav-side div {
+    opacity: 0.7;
 }
 
-#sidebar a:hover{
+#sidebar .nav-side div:hover{
     opacity: 1;
 } 
+#sidebar .playlist a {
+    opacity: 0.7;
+}
+
+#sidebar .playlist a:hover{
+    opacity: 1;
+} 
+
 
 .side-start {
     height: calc(100% - 60px)
@@ -149,6 +158,7 @@ h4{
 
 .logo-nav {
     width: 15%;
+
 }
 
 
@@ -161,7 +171,7 @@ h4{
 
 .side-end {
     width: 100%;
-    height: 60px%;
+    height: 60px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -170,7 +180,6 @@ h4{
 }
 
 .side-end a {
-    margin-right: 10px;
     color: #a3a3a3;
 
 }
@@ -244,6 +253,22 @@ main ul li a:hover{
 
 main h2 {
     margin: 20px 0px 20px 0px;
+}
+
+
+main #nav-main ul a:after{
+    content:'';
+    display: block;
+    height: 3px;
+    width: 60%;
+    margin: 0 auto;
+    background-color: transparent;
+} 
+
+
+#nav-main a.active:after,
+#nav-main a:hover:after{
+    background-color: #adff2f;
 }
 
 .circle {
