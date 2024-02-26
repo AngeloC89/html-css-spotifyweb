@@ -97,6 +97,7 @@ p {
 .playlist{
     min-height: 0px;
     background-color: black;
+    margin: 5px;
 }
 
 .playlist ul{
@@ -134,9 +135,19 @@ h4{
 }
 
 .nav-side div{
-    margin: 1px 0px;
+    margin: 1px 0px 1px 0px;
+   
     
 }
+
+.logo-nav{
+    border-left: 4px solid transparent;
+}
+
+.logo-nav:hover {
+    border-left: 4px solid #adff2f;
+}
+
 #logo {
     margin: 20px auto;
     
@@ -196,7 +207,7 @@ h4{
 /* *************** header *********** */
 
 .header {
-    background-color: #080b12;
+    background-color: #080b128a;
     color: #ffffff;
     height: 100px;
     position: fixed;
@@ -204,6 +215,7 @@ h4{
     left: 200px;
     width: calc(100% - 200px);
     overflow: hidden;
+    z-index: 1000;
 }
 
 .header>div a{
@@ -236,13 +248,11 @@ main {
 }
 
 #nav-main{
-    height: 120px;
+    height: 23%;
 }
 
 main ul li {
     margin: 0px 10px;
-
-   
     text-transform: uppercase;
 }
 
@@ -311,6 +321,7 @@ main #nav-main ul a:after{
   
   .card:hover .img-hover {
     opacity: 1;
+    cursor: pointer;
   }
   
   .img-hover i {
